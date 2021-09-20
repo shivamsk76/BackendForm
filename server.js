@@ -22,6 +22,11 @@ dbConfig.authenticate().then(() => {
 
 app.post('/registration', registration)
 
+app.post('/chatapi',(req,res)=>{
+    
+    console.log('heelo there')
+})
+
 
 
 
