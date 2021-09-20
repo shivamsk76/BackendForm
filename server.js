@@ -17,7 +17,7 @@ app.use(cors({ origin: "*" }));
 app.post("/registration", registration);
 
 app.post("/chatapi", (req, res) => {
-  console.log("heelo there");
+res.send(200)  
 });
 
 const PORT = process.env.port || 8080;
