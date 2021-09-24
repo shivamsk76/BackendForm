@@ -111,6 +111,8 @@ app.post("/sendemail", (req, res) => {
   });
 });
 
-const PORT = process.env.port || 8080;
+const port = process.env.PORT || 8000;
 
-app.listen(PORT, console.log("server is running", PORT));
+app.listen(port, () => {
+  console.log("App is running on port " + port);
+});
