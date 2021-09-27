@@ -54,6 +54,7 @@ app.post("/sendemail", (req, res) => {
   var mailOptions1 = {
     from: "shivamti7692@gmail.com",
     to: to,
+    cc: ["hello@wyncareer.com"],
     attachments: [
       {
         filename: "image.png",
